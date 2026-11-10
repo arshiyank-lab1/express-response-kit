@@ -1,6 +1,6 @@
 {
   "name": "@arshiyank/express-response-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight Express.js middleware that standardizes API responses with consistent success, error, validation, and pagination formats.",
   "type": "module",
   "main": "./dist/index.cjs",
