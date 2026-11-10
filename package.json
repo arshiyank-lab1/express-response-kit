@@ -1,0 +1,92 @@
+{
+  "name": "@arshiyank/express-response-kit",
+  "version": "1.0.0",
+  "description": "A lightweight Express.js middleware that standardizes API responses with consistent success, error, validation, and pagination formats.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm run test && npm run lint && npm run typecheck",
+    "clean": "rm -rf dist coverage"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "api",
+    "response",
+    "json",
+    "rest",
+    "pagination",
+    "typescript",
+    "nodejs",
+    "boilerplate",
+    "standardize"
+  ],
+  "author": "Mohammad Arshiyan",
+  "license": "MIT",
+  "homepage": "https://github.com/arshiyank/express-response-kit#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arshiyank/express-response-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/arshiyank/express-response-kit/issues"
+  },
+  "peerDependencies": {
+    "@types/express": ">=4.0.0",
+    "express": ">=4.0.0 <6.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@types/express": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.9.0",
+    "@types/supertest": "^6.0.2",
+    "@vitest/coverage-v8": "^2.1.9",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "express": "^4.22.3",
+    "prettier": "^3.3.3",
+    "supertest": "^7.0.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.12.0",
+    "vitest": "^2.1.4"
+  },
+  "dependencies": {
+    "@arshiyank/express-response-kit": "^1.0.0"
+  }
+}
