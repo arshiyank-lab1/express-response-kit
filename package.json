@@ -53,13 +53,13 @@
   ],
   "author": "Mohammad Arshiyan",
   "license": "MIT",
-  "homepage": "https://github.com/arshiyank/express-response-kit#readme",
+  "homepage": "https://github.com/arshiyank-lab1/express-response-kit#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arshiyank/express-response-kit.git"
+    "url": "git+https://github.com/arshiyank-lab1/express-response-kit.git"
   },
   "bugs": {
-    "url": "https://github.com/arshiyank/express-response-kit/issues"
+    "url": "https://github.com/arshiyank-lab1/express-response-kit/issues"
   },
   "peerDependencies": {
     "@types/express": ">=4.0.0",
